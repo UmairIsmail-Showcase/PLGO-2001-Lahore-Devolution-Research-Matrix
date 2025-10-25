@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLGO 2001 Research Hub: City District Government Lahore</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Base Styles and Colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Very light, professional background */
+            color: #1E293B; /* Deep Navy for main text */
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748B;
+        }
+        
+        /* Knowledge Item Styling */
+        .knowledge-item {
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            cursor: pointer;
+            border-left-width: 6px; 
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+            border-color: #E2E8F0; /* Default neutral border */
+        }
+        .knowledge-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        /* Content Visibility */
+        .knowledge-content {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease-in-out;
+            opacity: 0;
+            padding-top: 0;
+        }
+        .knowledge-content.open {
+            max-height: 3000px; 
+            opacity: 1;
+            padding-top: 1.5rem;
+        }
+
+        /* Specific Color Borders for Categories */
+        .border-legal { border-left-color: #06B6D4; /* Teal */ }
+        .border-control { border-left-color: #10B981; /* Emerald */ }
+        .border-fiscal { border-left-color: #3B82F6; /* Blue */ }
+        .border-analysis { border-left-color: #FBBF24; /* Amber/Gold */ }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-12">
+
+    <!-- Main Content Area -->
+    <div class="max-w-4xl mx-auto">
+        <header class="text-center mb-10 sm:mb-12 bg-white p-6 rounded-xl shadow-xl">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight tracking-tight">
+                PLGO 2001: Lahore Devolution Research Matrix
+            </h1>
+            <p class="mt-2 sm:mt-3 text-lg sm:text-xl text-gray-600 border-t pt-2 sm:pt-3">
+                Verified Foundational Artifacts for PhD-Level Analysis
+            </p>
+        </header>
+
+        <!-- Search Bar (Sticky for Mobile Usability) -->
+        <div class="mb-8 sticky top-0 z-10 bg-white p-4 -mx-4 sm:p-6 sm:mx-0 shadow-2xl rounded-xl sm:rounded-2xl border-t-4 border-teal-500">
+            <label for="knowledge-search" class="sr-only">Search Knowledge</label>
+            <div class="relative">
+                <input type="text" id="knowledge-search" onkeyup="filterKnowledge()" placeholder="Search artifacts by keyword: Nazim, DCO, fiscal, CCB, audit..."
+                       class="w-full p-3 pl-12 sm:p-4 sm:pl-14 border-2 border-gray-200 rounded-xl bg-gray-50 text-base sm:text-lg focus:ring-4 focus:ring-teal-400 focus:border-teal-500 transition duration-200 shadow-inner">
+                <svg class="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 h-6 w-6 sm:h-7 sm:w-7 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </div>
+            <div id="search-results-count" class="mt-2 text-xs sm:text-sm text-gray-500 text-right pr-2"></div>
+        </div>
+        
+        <!-- Knowledge Base Container -->
+        <div id="knowledge-container" class="space-y-6 sm:space-y-8">
+
+            <!-- Category: Foundational Legal Text & Objectives -->
+            <h2 class="text-xl sm:text-2xl font-extrabold text-teal-700 mt-8 sm:mt-10 mb-3 sm:mb-4 border-b-4 border-teal-500 pb-2 sm:pb-3">I. The Legal Framework: PLGO 2001</h2>
+
+            <div class="knowledge-item bg-white p-4 sm:p-6 border-legal" onclick="toggleContent(this)">
+                <div class="knowledge-header flex justify-between items-center">
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-900">1. Core Objectives and Repeal Status of PLGO 2001</h3>
+                    <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-500" data-arrow stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </div>
+                <div class="knowledge-content border-t pt-4 border-gray-100">
+                    <p class="text-gray-700 leading-relaxed mb-4">The Punjab Local Government Ordinance, 2001 (PLGO) was enacted to reconstruct local governance by devolving **political, administrative, and financial responsibility** and authority to elected representatives. It aimed for good governance, effective service delivery, and transparent decision-making through institutionalized participation. It applied to the whole of Punjab, excluding cantonments.</p>
+                    <p class="text-red-700 font-extrabold leading-relaxed mb-4 p-3 bg-red-50 rounded-lg border-l-4 border-red-600 text-sm">**CRITICAL NOTE:** The PLGO 2001 was repealed by the **Punjab Local Government Act (PLGA) 2013**. Subsequent comparisons highlight that later acts (PLGA 2013 and 2019) have continuously redefined the administrative and financial mechanisms of local governance, often centralizing powers that the 2001 Ordinance had devolved.</p>
+
+                    <h4 class="font-bold text-gray-800 mt-6 mb-3 border-t pt-3">References:</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 list-disc pl-5">
+                        <li>
+                            <span class="font-semibold text-gray-800">The Punjab Local Government Ordinance, 2001 (XIII of 2001) - Nasir Law Associates</span>
+                            <a href="http://nasirlawsite.com/laws/localg18.htm" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: nasirlawsite.com/laws/localg18.htm
+                            </a>
+                        </li>
+                        <li>
+                            <span class="font-semibold text-gray-800">Punjab Local Government Ordinance, 2001 (Mentions repeal by PLGA 2013)</span>
+                            <a href="https://khalidzafar.com/laws-of-pakistan/punjab-local-government-ordinance-2001/" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: khalidzafar.com/laws-of-pakistan/...
+                            </a>
+                        </li>
+                        <li>
+                            <span class="font-semibold text-gray-800">Local Government System in Pakistan during Musharraf Era (Mentions devolution scheme aims)</span>
+                            <a href="https://plhr.org.pk/issues/v5/2/local-government-system-in-pakistan-during-musharraf-era.pdf" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: plhr.org.pk/issues/v5/2/...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="knowledge-item bg-white p-4 sm:p-6 border-legal" onclick="toggleContent(this)">
+                <div class="knowledge-header flex justify-between items-center">
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-900">2. Three-Tier Administrative Structure (CDGL)</h3>
+                    <svg class="w-6 h-6 text-teal-600 transform transition-transform duration-500" data-arrow stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </div>
+                <div class="knowledge-content border-t pt-4 border-gray-100">
+                    <p class="text-gray-700 leading-relaxed mb-4">The PLGO 2001 established a three-tiered system to decentralize governance down to the grassroots level:</p>
+                    <ul class="list-disc list-inside ml-4 mt-2 space-y-2 text-gray-700">
+                        <li>**District/City District Government (CDG) & Zila Council:** The highest tier. Headed by the **Zila Nazim**.</li>
+                        <li>**Tehsil/Town Municipal Administration (TMA) & Tehsil Council:** The intermediate tier, responsible for municipal administration within the CDG.</li>
+                        <li>**Union Administration (UA) & Union Council (UC):** The basic tier, with a Union Nazim and Naib Nazim, supported by Village/Neighbourhood councils.</li>
+                    </ul>
+
+                    <h4 class="font-bold text-gray-800 mt-6 mb-3 border-t pt-3">References:</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 list-disc pl-5">
+                        <li>
+                            <span class="font-semibold text-gray-800">New Local Government System: A Step Towards Community Empowerment? (Mentions the three tiers)</span>
+                            <a href="https://file.pide.org.pk/pdfpdr/2001/845-867.pdf" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: file.pide.org.pk/pdfpdr/2001/...
+                            </a>
+                        </li>
+                        <li>
+                            <span class="font-semibold text-gray-800">Local Government System in Pakistan during Musharraf Era (Describes the composition of District Government)</span>
+                            <a href="https://plhr.org.pk/issues/v5/2/local-government-system-in-pakistan-during-musharraf-era.pdf" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: plhr.org.pk/issues/v5/2/...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            ---
+            <!-- Category: Key Roles and Administrative Changes -->
+            <h2 class="text-xl sm:text-2xl font-extrabold text-emerald-700 mt-8 sm:mt-10 mb-3 sm:mb-4 border-b-4 border-emerald-500 pb-2 sm:pb-3">II. Political and Bureaucratic Control</h2>
+
+            <div class="knowledge-item bg-white p-4 sm:p-6 border-control" onclick="toggleContent(this)">
+                <div class="knowledge-header flex justify-between items-center">
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-900">3. Powers of the Zila Nazim and Bureaucratic Accountability</h3>
+                    <svg class="w-6 h-6 text-emerald-600 transform transition-transform duration-500" data-arrow stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </div>
+                <div class="knowledge-content border-t pt-4 border-gray-100">
+                    <p class="text-gray-700 leading-relaxed mb-4">The Zila Nazim was the executive head, holding **excessive powers and command** over the bureaucracy. Key accountability features included:</p>
+                    <ul class="list-disc list-inside ml-4 mt-2 space-y-2 text-gray-700">
+                        <li>**APR Authority:** The Nazim was mandated to **initiate the Annual Performance Report (APR) of the District Co-ordination Officer (DCO)**.</li>
+                        <li>**Executive Control:** The District Police Officer (DPO) was also required to report to the Nazim on law and order, centralizing executive control.</li>
+                        <li>**Inspection:** Entitled to initiate inspection of Tehsil Municipal Administrations (TMAs) and Union Administrations (UAs).</li>
+                    </ul>
+
+                    <h4 class="font-bold text-gray-800 mt-6 mb-3 border-t pt-3">References:</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 list-disc pl-5">
+                        <li>
+                            <span class="font-semibold text-gray-800">The Punjab Local Government Ordinance, 2001 (Mentions APR initiation and Nazim's functions)</span>
+                            <a href="https://iota.punjab.gov.pk/system/files/The%20Punjab%20Local%20Government%20Ordinance%202001%20Updated%20Version.pdf" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: iota.punjab.gov.pk/system/files/...
+                            </a>
+                        </li>
+                        <li>
+                            <span class="font-semibold text-gray-800">A holistic view of Local Governments Acts in Pakistan (Mentions excessive powers and TMA inspection)</span>
+                            <a href="http://pu.edu.pk/images/journal/studies/PDF-FILES/9_v20_2_19.pdf" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: pu.edu.pk/images/journal/studies/...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="knowledge-item bg-white p-4 sm:p-6 border-control" onclick="toggleContent(this)">
+                <div class="knowledge-header flex justify-between items-center">
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-900">4. The Role and Status of the District Coordination Officer (DCO)</h3>
+                    <svg class="w-6 h-6 text-emerald-600 transform transition-transform duration-500" data-arrow stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </div>
+                <div class="knowledge-content border-t pt-4 border-gray-100">
+                    <p class="text-gray-700 leading-relaxed mb-4">The **DCO** replaced the traditional Deputy Commissioner (DC) and was the head of the district secretariat. The DCO's role was to assist the Zila Nazim and coordinate the District Administration's work. His stability was directly linked to the Nazim's political alignment.</p>
+                    <p class="text-red-600 font-medium leading-relaxed mt-4 p-3 bg-red-50 rounded-lg border-l-4 border-red-400 text-sm">**Post-2010 Context:** The office of the DCO was eventually replaced and its powers shifted, marking a reversal of the devolutionary trend that empowered the Zila Nazim.</p>
+
+                    <h4 class="font-bold text-gray-800 mt-6 mb-3 border-t pt-3">References:</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 list-disc pl-5">
+                        <li>
+                            <span class="font-semibold text-gray-800">A holistic view of Local Governments Acts in Pakistan (Mentions DCO replacement post-2010)</span>
+                            <a href="http://pu.edu.pk/images/journal/studies/PDF-FILES/9_v20_2_19.pdf" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: pu.edu.pk/images/journal/studies/...
+                            </a>
+                        </li>
+                        <li>
+                            <span class="font-semibold text-gray-800">Convergence Model of Governance: A Case Study of the Local Government System of Pakistan (Details DCO's role and political dependency)</span>
+                            <a href="https://mpra.ub.uni-muenchen.de/8690/1/MPRA_paper_8690.pdf" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: mpra.ub.uni-muenchen.de/8690/1/...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            ---
+            <!-- Category: Administrative and Fiscal Mechanics -->
+            <h2 class="text-xl sm:text-2xl font-extrabold text-blue-700 mt-8 sm:mt-10 mb-3 sm:mb-4 border-b-4 border-blue-500 pb-2 sm:pb-3">III. Fiscal & Citizen Participation Mechanisms</h2>
+
+            <div class="knowledge-item bg-white p-4 sm:p-6 border-fiscal" onclick="toggleContent(this)">
+                <div class="knowledge-header flex justify-between items-center">
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-900">5. Community Citizen Boards (CCBs) and Co-funding Requirements</h3>
+                    <svg class="w-6 h-6 text-blue-600 transform transition-transform duration-500" data-arrow stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </div>
+                <div class="knowledge-content border-t pt-4 border-gray-100">
+                    <p class="text-gray-700 leading-relaxed mb-4">**CCBs** were a mechanism for citizen participation, empowered to make financial claims for development projects. They had to be registered with the **Executive District Officer (EDO) in charge of Community Development**.</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">Crucially, CCBs were required to submit a bank draft for **20 per cent of the total project costs** (mandatory co-funding) to get their project incorporated into the local government's Annual Development Programme (ADP).</p>
+
+                    <h4 class="font-bold text-gray-800 mt-6 mb-3 border-t pt-3">References:</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 list-disc pl-5">
+                        <li>
+                            <span class="font-semibold text-gray-800">Devolution row: An assessment of Pakistan's 2001 Local Government Ordinance - Clingendael Institute (Provides full detail on CCB registration and 20% rule)</span>
+                            <a href="https://www.clingendael.org/sites/default/files/pdfs/20101119_CRU_publicatie_mmezzera.pdf" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: clingendael.org/sites/default/...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="knowledge-item bg-white p-4 sm:p-6 border-fiscal" onclick="toggleContent(this)">
+                <div class="knowledge-header flex justify-between items-center">
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-900">6. Local Revenue Streams and Weaknesses</h3>
+                    <svg class="w-6 h-6 text-blue-600 transform transition-transform duration-500" data-arrow stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </div>
+                <div class="knowledge-content border-t pt-4 border-gray-100">
+                    <p class="text-gray-700 leading-relaxed mb-4">Local governments could impose fees, taxes, and user charges. A notable revenue source for CDGL Lahore was the **Conversion Fee for conversion of land use** (e.g., residential to commercial).</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">A major weakness was that local financial independence was **severely limited** and heavily dependent upon provincial government resources, often **hamstringing** devolved financial authority.</p>
+
+                    <h4 class="font-bold text-gray-800 mt-6 mb-3 border-t pt-3">References:</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 list-disc pl-5">
+                        <li>
+                            <span class="font-semibold text-gray-800">AUDIT REPORT ON THE ACCOUNTS OF MUNICIPAL COMMITTEES... (Mentions Land Use Conversion Fee structure)</span>
+                            <a href="https://agp.gov.pk/SiteImage/Policy/AR%20Committee%202020-21-Final%20Draft%20-signed%20-%20AGP.pdf" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: agp.gov.pk/SiteImage/Policy/...
+                            </a>
+                        </li>
+                        <li>
+                            <span class="font-semibold text-gray-800">Local Government System in Punjab: A Comparison of LGO 2001, PLGA 2013, and, PLGA 2019 (Discusses the overall limitation of local government to practice export in financial issues)</span>
+                            <a href="https://www.researchgate.net/publication/365712053_Local_Government_System_in_Punjab_A_Comparison_of_LGO_2001_PLGA_2013_and_PLGA_2019" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: researchgate.net/publication/...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="knowledge-item bg-white p-4 sm:p-6 border-fiscal" onclick="toggleContent(this)">
+                <div class="knowledge-header flex justify-between items-center">
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-900">7. Fiscal Health and Audit Deficiencies (2001-2009)</h3>
+                    <svg class="w-6 h-6 text-blue-600 transform transition-transform duration-500" data-arrow stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </div>
+                <div class="knowledge-content border-t pt-4 border-gray-100">
+                    <p class="text-red-700 font-extrabold leading-relaxed mb-4 p-3 bg-yellow-50 rounded-lg border-l-4 border-red-600 text-sm">This data directly quantifies the challenge of financial devolution, showing the CDGL's heavy reliance on provincial grants rather than self-generated income.</p>
+                    <ul class="list-disc list-inside ml-4 mt-2 space-y-2 text-gray-700">
+                        <li>**Fiscal Dependency:** Studies of the CDGL Lahore budget (2001-2009) consistently show that **Provincial Transfers** constituted over **80%** of the total funds available to the City District Government. This fundamentally undermines the goal of fiscal independence.</li>
+                        <li>**Low Own-Source Revenue (OSR):** The capacity to generate OSR remained low due to inadequate tax base expansion and poor collection efficiency. Local governments were unable to fully exploit their legally devolved revenue powers.</li>
+                        <li>**Audit Observations:** Audit reports frequently highlighted two key areas of fiscal mismanagement: (1) **Unauthorized/Irregular Expenditures** and (2) **Failure to Recover Significant Dues** owed to the government, pointing to weak internal financial controls under the Nazim/DCO structure.</li>
+                    </ul>
+
+                    <h4 class="font-bold text-gray-800 mt-6 mb-3 border-t pt-3">References:</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 list-disc pl-5">
+                        <li>
+                            <span class="font-semibold text-gray-800">Fiscal Decentralization and Local Governance in Pakistan: A Case Study of Punjab (Quantifies provincial transfers and OSR issues)</span>
+                            <a href="https://www.pide.org.pk/pdf/Working%20Paper/Working%20Paper-V-06.pdf" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: pide.org.pk/pdf/Working%20Paper/...
+                            </a>
+                        </li>
+                        <li>
+                            <span class="font-semibold text-gray-800">Local Government Systems in Pakistan (Mentions poor OSR capacity and widespread audit issues)</span>
+                            <a href="https://www.researchgate.net/publication/351654210_Local_Government_Systems_in_Pakistan" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: researchgate.net/publication/...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            ---
+            <!-- Category: Academic Analysis and Critique -->
+            <h2 class="text-xl sm:text-2xl font-extrabold text-amber-700 mt-8 sm:mt-10 mb-3 sm:mb-4 border-b-4 border-amber-500 pb-2 sm:pb-3">IV. Comparative and Analytical Context</h2>
+
+            <div class="knowledge-item bg-white p-4 sm:p-6 border-analysis" onclick="toggleContent(this)">
+                <div class="knowledge-header flex justify-between items-center">
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-900">8. Comparative Analysis: PLGO 2001 vs. PLGA 2013 & 2019</h3>
+                    <svg class="w-6 h-6 text-amber-600 transform transition-transform duration-500" data-arrow stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </div>
+                <div class="knowledge-content border-t pt-4 border-gray-100">
+                    <p class="text-gray-700 leading-relaxed mb-4">Subsequent legislation (PLGA 2013, 2019) has generally reversed the devolutionary trend of PLGO 2001:</p>
+                    <ul class="list-disc list-inside ml-4 mt-2 space-y-2 text-gray-700">
+                        <li>**Administrative Authority:** Later acts stripped some powers (e.g., separate district authorities for education/health), centralizing them away from the district government.</li>
+                        <li>**Elected vs. Appointed:** The power of the elected Zila Nazim was significantly **diluted**, restoring more authority to appointed officials like the Deputy Commissioner.</li>
+                    </ul>
+
+                    <h4 class="font-bold text-gray-800 mt-6 mb-3 border-t pt-3">References:</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 list-disc pl-5">
+                        <li>
+                            <span class="font-semibold text-gray-800">Local Government System in Punjab: A Comparison of LGO 2001, PLGA 2013, and, PLGA 2019 (Comprehensive comparison of structural and administrative changes across the three acts)</span>
+                            <a href="https://www.researchgate.net/publication/365712053_Local_Government_System_in_Punjab_A_Comparison_of_LGO_2001_PLGA_2013_and_PLGA_2019" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: researchgate.net/publication/...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="knowledge-item bg-white p-4 sm:p-6 border-analysis" onclick="toggleContent(this)">
+                <div class="knowledge-header flex justify-between items-center">
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-900">9. Political Context: Musharraf's Devolution and Non-Party Elections</h3>
+                    <svg class="w-6 h-6 text-amber-600 transform transition-transform duration-500" data-arrow stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </div>
+                <div class="knowledge-content border-t pt-4 border-gray-100">
+                    <p class="text-gray-700 leading-relaxed mb-4">The PLGO 2001 system, introduced by General Musharraf, was based on **non-party elections**, meaning formal political parties could not officially participate.</p>
+                    <p class="text-gray-700 leading-relaxed mt-4">This fostered local members relying on ethnic or feudal power, often leading to friction when their local government opposed the ruling provincial party.</p>
+
+                    <h4 class="font-bold text-gray-800 mt-6 mb-3 border-t pt-3">References:</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 list-disc pl-5">
+                        <li>
+                            <span class="font-semibold text-gray-800">Local Government System in Pakistan (Mentions non-party elections and reserved seats)</span>
+                            <a href="https://en.wikipedia.org/wiki/Local_government-in-Pakistan" target="_blank" class="block text-blue-600 hover:text-blue-700 transition duration-150 underline truncate">
+                                → View Source: en.wikipedia.org/wiki/...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer for context -->
+        <footer class="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t-2 border-gray-200 text-center text-xs sm:text-sm text-gray-500">
+            <p>Artifact Matrix v5.0 | Generated from public domain government documentation and published academic research.</p>
+        </footer>
+    </div>
+    
+    <script>
+        /**
+         * Toggles the visibility of the content associated with a knowledge item.
+         */
+        function toggleContent(item) {
+            const content = item.querySelector('.knowledge-content');
+            const arrow = item.querySelector('[data-arrow]');
+
+            const isClosing = content.classList.contains('open');
+
+            // Collapse all other open sections for focus
+            document.querySelectorAll('.knowledge-content.open').forEach(openContent => {
+                // Ensure we only collapse others, not the current one if it's already open
+                if (openContent !== content) {
+                    openContent.classList.remove('open');
+                    openContent.closest('.knowledge-item').querySelector('[data-arrow]').classList.remove('rotate-90');
+                }
+            });
+
+            // Toggle the target section
+            if (isClosing) {
+                content.classList.remove('open');
+                arrow.classList.remove('rotate-90');
+            } else {
+                content.classList.add('open');
+                arrow.classList.add('rotate-90');
+            }
+        }
+
+        /**
+         * Filters the knowledge items based on the search input text.
+         */
+        function filterKnowledge() {
+            const input = document.getElementById('knowledge-search');
+            const filter = input.value.toUpperCase();
+            const container = document.getElementById('knowledge-container');
+            const items = container.querySelectorAll('.knowledge-item');
+            const countDisplay = document.getElementById('search-results-count');
+            let matchCount = 0;
+
+            items.forEach(item => {
+                const textContent = item.textContent || item.innerText;
+                
+                if (filter.length === 0) {
+                    item.style.display = "";
+                    matchCount++; 
+                } 
+                else if (textContent.toUpperCase().indexOf(filter) > -1) {
+                    item.style.display = "";
+                    matchCount++;
+                } else {
+                    item.style.display = "none";
+                }
+            });
+
+            if (filter.length > 0) {
+                countDisplay.textContent = `${matchCount} ${matchCount === 1 ? 'Artifact' : 'Artifacts'} found.`;
+            } else {
+                 countDisplay.textContent = "";
+            }
+        }
+
+        // Initial setup to run filter on load (in case of cached input)
+        window.onload = function() {
+            filterKnowledge();
+        };
+
+    </script>
+</body>
+</html>
